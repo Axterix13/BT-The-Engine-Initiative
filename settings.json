@@ -1,0 +1,13 @@
+{
+   /* A mech will act in the earliest phase possible based on if its MaxWalkDistance is greater than or equal to value set here.*/
+  "MechPhaseSpecialMinSpeed": 209.0,
+  "MechPhaseLightMinSpeed": 164.0,
+  "MechPhaseMediumMinSpeed": 139.0,
+  "MechPhaseHeavyMinSpeed": 119.0,
+ 
+   /* A vehicle will act in the earliest phase possible based on if its "MaxWalkDistance" is greater than or equal to value set here.*/
+  "VehiclePhaseSpecialMinSpeed": 229.0,
+  "VehiclePhaseLightMinSpeed": 189.0,
+   "VehiclePhaseMediumMinSpeed": 164.0,
+  "VehiclePhaseHeavyMinSpeed": 139.0
+}
