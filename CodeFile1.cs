@@ -108,14 +108,14 @@ namespace TheEngineInitiative
 				WeightClass weightClass = __instance.VehicleDef.Chassis.weightClass;
 				int i = __instance.StatCollection.GetValue<int>("BaseInitiative");
 				int i_phaseModifier = 0;
-				if (weightClass == WeightClass.LIGHT && i != __instance.Combat.Constants.Phase.PhaseLight)
-					i_phaseModifier = i - __instance.Combat.Constants.Phase.PhaseLight;
-				else if (weightClass == WeightClass.MEDIUM && i != __instance.Combat.Constants.Phase.PhaseMedium)
-					i_phaseModifier = i - __instance.Combat.Constants.Phase.PhaseMedium;
-				else if (weightClass == WeightClass.HEAVY && i != __instance.Combat.Constants.Phase.PhaseHeavy)
-					i_phaseModifier = i - __instance.Combat.Constants.Phase.PhaseHeavy;
-				else if (weightClass == WeightClass.ASSAULT && i != __instance.Combat.Constants.Phase.PhaseAssault)
-					i_phaseModifier = i - __instance.Combat.Constants.Phase.PhaseAssault;
+				if (weightClass == WeightClass.LIGHT && i != __instance.Combat.Constants.Phase.PhaseLightVehicle)
+					i_phaseModifier = i - __instance.Combat.Constants.Phase.PhaseLightVehicle;
+				else if (weightClass == WeightClass.MEDIUM && i != __instance.Combat.Constants.Phase.PhaseMediumVehicle)
+					i_phaseModifier = i - __instance.Combat.Constants.Phase.PhaseMediumVehicle;
+				else if (weightClass == WeightClass.HEAVY && i != __instance.Combat.Constants.Phase.PhaseHeavyVehicle)
+					i_phaseModifier = i - __instance.Combat.Constants.Phase.PhaseHeavyVehicle;
+				else if (weightClass == WeightClass.ASSAULT && i != __instance.Combat.Constants.Phase.PhaseAssaultVehicle)
+					i_phaseModifier = i - __instance.Combat.Constants.Phase.PhaseAssaultVehicle;
 
 				float f_walkSpeed = __instance.MovementCaps.MaxWalkDistance;
 				if (f_walkSpeed >= TheEngineInitiative.Settings.VehiclePhaseSpecialMinSpeed)
