@@ -1,0 +1,11 @@
+{
+    "Name": "The Engine Initiative",
+    "Enabled": true,
+	
+	"DLL": "The_Engine_Initiative.dll",
+    "DLLEntryPoint": "TheEngineInitiative.TheEngineInitiative.Init",
+
+    
+    "Manifest": [
+  ]
+}
